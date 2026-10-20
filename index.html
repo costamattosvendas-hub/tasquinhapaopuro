@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tasquinha Pão Puro | Padaria & Cafetaria Artesanal</title>
+  <title>Pão Puro | Um bom pão muda o seu dia.</title>
   <style>
     :root {
-      --primary: #c27803;      /* Tom dourado/padeiro */
+      --primary: #c27803;
       --primary-dark: #8e5100;
-      --bg: #faf7f2;           /* Fundo creme suave */
+      --bg: #faf7f2;
       --card-bg: #ffffff;
       --text: #2d2621;
       --muted: #6b635b;
@@ -29,33 +29,35 @@
     }
 
     header {
-      background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.65)),
-                  #543d2b;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), #543d2b;
       color: #fff;
       text-align: center;
-      padding: 80px 20px;
+      padding: 90px 20px;
     }
 
     header h1 {
-      font-size: 2.8rem;
-      letter-spacing: 1px;
-      margin-bottom: 10px;
+      font-size: 3rem;
+      letter-spacing: 1.5px;
+      margin-bottom: 12px;
       color: #ffd899;
+      text-transform: uppercase;
     }
 
-    header p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin: 0 auto 25px auto;
-      opacity: 0.95;
+    header p.tagline {
+      font-size: 1.35rem;
+      font-weight: 300;
+      font-style: italic;
+      max-width: 650px;
+      margin: 0 auto 30px auto;
+      color: #f5ede2;
     }
 
     .btn-cta {
       display: inline-block;
       background-color: var(--whatsapp);
       color: #fff;
-      padding: 14px 28px;
-      font-size: 1.1rem;
+      padding: 14px 30px;
+      font-size: 1.05rem;
       font-weight: 600;
       text-decoration: none;
       border-radius: 50px;
@@ -123,7 +125,7 @@
       display: flex;
       justify-content: space-between;
       border-bottom: 1px dashed #e8e2d8;
-      padding: 8px 0;
+      padding: 9px 0;
       font-size: 1rem;
     }
 
@@ -147,31 +149,31 @@
 
     .info-box h3 {
       color: var(--primary-dark);
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     footer {
       background-color: #241e1b;
       color: #c9c3be;
       text-align: center;
-      padding: 25px 20px;
+      padding: 30px 20px;
       font-size: 0.9rem;
     }
 
-    footer a {
-      color: #ffd899;
-      text-decoration: none;
+    footer p.sub {
+      margin-top: 6px;
+      font-size: 0.8rem;
+      opacity: 0.75;
     }
   </style>
 </head>
 <body>
 
-  <!-- TOPO / APRESENTAÇÃO -->
+  <!-- CABEÇALHO -->
   <header>
-    <h1>Tasquinha Pão Puro</h1>
-    <p>O aroma do pão quentinho saindo do forno, cafés especiais e tradição em cada detalhe.</p>
-    <!-- Substitua o número abaixo pelo WhatsApp do estabelecimento -->
-    <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido%20na%20Tasquinha%20Pão%20Puro." target="_blank" class="btn-cta">
+    <h1>Pão Puro</h1>
+    <p class="tagline">"Um bom pão muda o seu dia."</p>
+    <a href="https://wa.me/5500000000000?text=Olá!%20Vim%20pelo%20site%20da%20Pão%20Puro%20e%20gostaria%20de%20fazer%20um%20pedido." target="_blank" class="btn-cta">
       Fazer Pedido no WhatsApp
     </a>
   </header>
@@ -179,79 +181,75 @@
   <!-- CONTEÚDO PRINCIPAL -->
   <main class="container">
 
-    <!-- SEÇÃO CARDÁPIO -->
     <section class="section-title">
-      <h2>Destaques da Nossa Tasquinha</h2>
+      <h2>Nossas Fornadas</h2>
     </section>
 
     <div class="menu-grid">
-      <!-- Categoria 1 -->
       <article class="card">
-        <h3>🥖 Pães Artesanais</h3>
+        <h3>🥖 Pães Frescos</h3>
         <div class="item">
           <span>Pão Francês Tradicional</span>
           <span class="price">R$ 0,90 / un</span>
         </div>
         <div class="item">
-          <span>Pão de Fermentação Natural</span>
+          <span>Fermentação Natural</span>
           <span class="price">R$ 18,00</span>
         </div>
         <div class="item">
-          <span>Broa de Milho Fresquinha</span>
+          <span>Broa de Milho</span>
           <span class="price">R$ 4,50</span>
         </div>
         <div class="item">
-          <span>Baguete Tradicional</span>
+          <span>Baguete Rústica</span>
           <span class="price">R$ 7,50</span>
         </div>
       </article>
 
-      <!-- Categoria 2 -->
       <article class="card">
         <h3>☕ Cafés & Bebidas</h3>
+        <div class="item">
+          <span>Café Coado na Hora</span>
+          <span class="price">R$ 5,00</span>
+        </div>
         <div class="item">
           <span>Café Espresso</span>
           <span class="price">R$ 6,00</span>
         </div>
         <div class="item">
-          <span>Pingado Tradicional</span>
+          <span>Pingado / Café com Leite</span>
           <span class="price">R$ 5,50</span>
         </div>
         <div class="item">
-          <span>Capuccino Especial</span>
+          <span>Capuccino Cremoso</span>
           <span class="price">R$ 9,50</span>
-        </div>
-        <div class="item">
-          <span>Suco de Laranja Natural</span>
-          <span class="price">R$ 8,00</span>
         </div>
       </article>
 
-      <!-- Categoria 3 -->
       <article class="card">
         <h3>🥐 Salgados & Doces</h3>
         <div class="item">
-          <span>Pão de Queijo Mineiro</span>
+          <span>Pão de Queijo</span>
           <span class="price">R$ 5,00</span>
-        </div>
-        <div class="item">
-          <span>Pastel de Nata / Belém</span>
-          <span class="price">R$ 8,50</span>
         </div>
         <div class="item">
           <span>Croissant Amanteigado</span>
           <span class="price">R$ 9,00</span>
         </div>
         <div class="item">
-          <span>Coxinha de Frango c/ Catupiry</span>
+          <span>Pastel de Nata</span>
           <span class="price">R$ 8,50</span>
+        </div>
+        <div class="item">
+          <span>Fatia de Bolo Caseiro</span>
+          <span class="price">R$ 7,00</span>
         </div>
       </article>
     </div>
 
-    <!-- INFORMAÇÕES DE HORÁRIO E ENDEREÇO -->
+    <!-- LOCALIZAÇÃO E HORÁRIOS -->
     <section class="info-box">
-      <h3>📍 Venha nos visitar</h3>
+      <h3>📍 Onde Estamos</h3>
       <p>Rua Exemplo, 123 — Bairro, Cidade - UF</p>
       <br>
       <h3>⏰ Horário de Funcionamento</h3>
@@ -263,7 +261,8 @@
 
   <!-- RODAPÉ -->
   <footer>
-    <p>&copy; 2026 Tasquinha Pão Puro. Todos os direitos reservados.</p>
+    <p>&copy; 2026 Pão Puro. Todos os direitos reservados.</p>
+    <p class="sub">Um bom pão muda o seu dia.</p>
   </footer>
 
 </body>
